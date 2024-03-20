@@ -6,6 +6,7 @@ FROM nginx:latest
 
 # Update and install necessary packages
 RUN apt-get update && \
+    apt-get upgrade -y && \
     apt-get install -y software-properties-common && \
     apt-add-repository --yes --update ppa:ansible/ansible
 

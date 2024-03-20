@@ -9,7 +9,8 @@ RUN apt-get update && \
     apt-get install -y software-properties-common && \
     apt-add-repository --yes --update ppa:ansible/ansible && \
     apt-get update && \
-    apt-get install -y ansible python-apt git stress && \
+    apt-get install -y ansible && \
+    apt-get install -y python-apt git stress && \
     git clone https://github.com/pruthvirajravanaboina/ansibletemplate-hostIp.git /myrepo
 
 # Execute playbook

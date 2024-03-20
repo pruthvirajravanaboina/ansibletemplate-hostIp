@@ -1,8 +1,8 @@
 # Use nginx as base image
-FROM nginx
+FROM nginx:latest
 
 # Copy HTML files to nginx default directory
-COPY index.html /usr/share/nginx/html
+# COPY index.html /usr/share/nginx/html
 
 # Update and install necessary packages
 RUN apt-get update && \
